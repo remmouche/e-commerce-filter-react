@@ -6,7 +6,7 @@ import Sidebar from "./pages/Sidebar/Sidebar";
 function App() {
   return (
     <>
-      <h1>Bismi Allah</h1>
+      {/* <span>Bismi Allah</span> */}
       <Navbar />
       <Products />
       <Recommended />
