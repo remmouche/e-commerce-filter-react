@@ -7,9 +7,10 @@ function App() {
   return (
     <>
       {/* <span>Bismi Allah</span> */}
+      <Sidebar />
       <Navbar />
-      <Products />
       <Recommended />
+      <Products />
       <Sidebar />
     </>
   );

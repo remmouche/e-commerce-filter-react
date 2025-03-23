@@ -16,15 +16,16 @@ function Products() {
           <div className="card-details">
             <h3 className="card-title">Shoe</h3>
             <section className="card-reviews">
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
+              <FaStar className="ratings-star" />
+              <FaStar className="ratings-star" />
+              <FaStar className="ratings-star" />
+              <FaStar className="ratings-star" />
               <span className="total-reviews">4</span>
             </section>
             <section className="card-price">
               <div className="price">
-                <del>$300</del>200
+                <del>$300</del>
+                <span>200</span>
               </div>
               <div className="bag">
                 <IoBagAdd className="bag-icon" />
@@ -124,7 +125,8 @@ function Products() {
             </section>
             <section className="card-price">
               <div className="price">
-                <del>$300</del>200
+                <del>$300</del>
+                <span>200</span>
               </div>
               <div className="bag">
                 <IoBagAdd className="bag-icon" />
