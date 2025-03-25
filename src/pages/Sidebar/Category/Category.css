@@ -1,0 +1,80 @@
+/* Category.css */
+
+.sidebar-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.sidebar-label-container {
+    display: flex;
+    /* Use flexbox to arrange items horizontally */
+    align-items: center;
+    /* Vertically align items in the center */
+    margin-bottom: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sidebar-label-container input {
+    position: relative;
+    /* Adjust positioning context */
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    margin-right: 10px;
+    /* Add some space between the radio and label */
+}
+
+.checkmark {
+    position: relative;
+    /* Adjust positioning context */
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-right: 5px;
+    /* Add a little space between the custom indicator and text */
+}
+
+.sidebar-label-container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.sidebar-label-container input:checked+.checkmark {
+    /* Target the sibling element */
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.sidebar-label-container input:checked+.checkmark:after {
+    /* Target the sibling element */
+    display: block;
+}
+
+.checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.sidebar-label-container span {
+    font-size: 0.9rem;
+    color: #555;
+}

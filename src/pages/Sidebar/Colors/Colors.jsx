@@ -3,7 +3,7 @@ import './Colors.css'
 
 function Colors() {
   return (
-    <h3>Colors</h3>
+    <p>Colors</p>
   )
 }
 
